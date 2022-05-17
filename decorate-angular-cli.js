@@ -63,7 +63,7 @@ function symlinkNgCLItoNxCLI() {
         output.error({
             title:
                 'Unable to create a symlink from the Angular CLI to the Nx CLI:' +
-                e.message,
+                e.message
         });
         throw e;
     }
@@ -73,10 +73,10 @@ try {
     symlinkNgCLItoNxCLI();
     require('nx/src/adapter/decorate-cli').decorateCli();
     output.log({
-        title: 'Angular CLI has been decorated to enable computation caching.',
+        title: 'Angular CLI has been decorated to enable computation caching.'
     });
 } catch (e) {
     output.error({
-        title: 'Decoration of the Angular CLI did not complete successfully',
+        title: 'Decoration of the Angular CLI did not complete successfully'
     });
 }
