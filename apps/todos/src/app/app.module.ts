@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UiModule } from '@myorg/ui';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
     declarations: [AppComponent],
@@ -12,7 +14,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         BrowserModule,
         HttpClientModule,
         UiModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+
+        MatToolbarModule,
+        MatButtonModule
     ],
     providers: [],
     bootstrap: [AppComponent]

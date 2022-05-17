@@ -1,5 +1,7 @@
-<h1>Todos</h1>
+<mat-toolbar [class.mat-elevation-z2]="true">
+    <span>My Application</span>
+</mat-toolbar>
 
 <myorg-todos [todos]="todos"></myorg-todos>
 
-<button (click)="addTodo()">Add Todo</button>
+<button mat-raised-button color="primary" (click)="addTodo()">Add Todo</button>
