@@ -92,6 +92,16 @@
                 "jestConfig": "apps/todos/jest.config.ts",
                 "passWithNoTests": true
             }
+        },
+        "deploy": {
+            "executor": "@angular/fire:deploy",
+            "options": {
+                "prerender": false,
+                "ssr": false,
+                "browserTarget": "todos:build:production",
+                "firebaseProject": "numeracy-journal",
+                "firebaseHostingSite": "numeracy-journal"
+            }
         }
     },
     "tags": []
